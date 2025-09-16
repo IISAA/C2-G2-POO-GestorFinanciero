@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.meta.control.AhorroManualController">
+   <children>
+      <HBox layoutX="100.0" layoutY="165.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="400.0">
+               <children>
+                  <Label layoutX="48.0" layoutY="24.0" text=".">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tableView" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="60.0">
+
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="400.0">
+               <children>
+                  <TextField fx:id="txtValor" disable="true" layoutX="14.0" layoutY="112.0" prefHeight="25.0" prefWidth="91.0" AnchorPane.leftAnchor="48.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></TextField>
+                  <Button layoutX="146.0" layoutY="201.0" mnemonicParsing="false" onAction="#asignarAhorroManual" text="Agregar" />
+                  <Label layoutX="14.0" layoutY="86.0" text="Monto actual (s/)" AnchorPane.leftAnchor="48.0" />
+                  <TextField fx:id="txtAgregar" layoutX="14.0" layoutY="170.0" prefHeight="25.0" prefWidth="91.0" AnchorPane.leftAnchor="48.0" />
+                  <Label layoutX="14.0" layoutY="146.0" text="Asignar (s/)" AnchorPane.leftAnchor="48.0" />
+                  <TextArea fx:id="txtarDescripcion" disable="true" layoutX="14.0" layoutY="247.0" opacity="0.0" prefHeight="62.0" prefWidth="230.0" AnchorPane.leftAnchor="48.0" />
+                  <Label layoutX="14.0" layoutY="51.0" text="Asignar Manualmente" AnchorPane.leftAnchor="48.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="77.0" layoutY="201.0" mnemonicParsing="false" onAction="#limpiarFormulario" text="Cancelar" />
+               </children></AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
