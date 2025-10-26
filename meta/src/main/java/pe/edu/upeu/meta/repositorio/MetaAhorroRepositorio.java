@@ -8,7 +8,7 @@ import pe.edu.upeu.meta.modelo.MetaAhorro;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class MetaAhorroRepositorio {
+public abstract class   MetaAhorroRepositorio {
     public List<MetaAhorro> listaMetas = new ArrayList<>();
 
     public List<MetaAhorro> findAll() {
